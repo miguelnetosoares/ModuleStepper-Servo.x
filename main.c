@@ -124,6 +124,7 @@ void main(void) {
     
     
     stepper();
+    i2c();
     
     
     while(1);
