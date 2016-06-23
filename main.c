@@ -21,9 +21,9 @@
 
 
 typedef enum {
-    AVANT = 0b01;
-    ARRIERE = 0b10;
-    ARRET = 0b00;
+    AVANT = 0b01,
+    ARRIERE = 0b10,
+    ARRET = 0b00
 } Direction;
 
 
@@ -88,12 +88,6 @@ static void stepperInitialiseHardware() {
     INTCONbits.GIEH = 1; // Toutes les interruptions sont activées
 }
 
-void calculDistance(unsigned char valeur){
-   // valeur est une distance en cm
-   // pour avancer d'un cm il faut fait 1 tour de roue (exemple)
-    unsigned char distOK;
-    
-}
 
 void stepper( unsigned char valeur){
     
@@ -107,7 +101,7 @@ void servo(unsigned char valeur) {
 }
 
 Direction conversionDirection(unsigned char v) {
-  
+    
     if (v > 0) {
         return AVANT;
     }
@@ -135,6 +129,7 @@ void low_priority interrupt interruptionsBassePriorite(){
     }
  
  // interuption pour stepper
+ 
  if (PIR1bits.TMR2IF) {
         PIR1bits.TMR2IF = 0;
         ADCON0bits.GO = 1;
