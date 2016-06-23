@@ -5,8 +5,8 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>test.h</itemPath>
-      <itemPath>stepper.h</itemPath>
       <itemPath>I2C.h</itemPath>
+      <itemPath>file.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,8 +16,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
-      <itemPath>stepper.c</itemPath>
       <itemPath>I2C.c</itemPath>
+      <itemPath>file.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
