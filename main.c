@@ -1,6 +1,8 @@
 #include <xc.h>
 #include "file.h"
 #include "i2c.h"
+#include "stepper.h"
+
 
 #pragma config FOSC = INTIO67   // Osc. interne, A6 et A7 comme IO.
 #pragma config IESO = OFF       // Pas d'osc. au démarrage.
